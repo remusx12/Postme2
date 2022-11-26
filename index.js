@@ -13,7 +13,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 const publicVapidKey = 'BIqqiuWGzixlngOzbQE9pv6QSNgL08vy132Ss-Fi96bcpcWj9FMmSOIxU4N9NyjmzSig3gWQ-FiuuVJnyhX7nKA';
 const privateVapidKey = 'nG8GFt6CaylPLMxSD9LYta3fxo9PEmGXyLLL8JNhZ9w';
 
-webPush.setVapidDetails('20183l301025@gmail.com', publicVapidKey, privateVapidKey);
+webPush.setVapidDetails('mailto:curso.apps.pwa@gmail.com', publicVapidKey, privateVapidKey);
 
 app.get('/', (req, res) => {
   res.send('Funcionando correctamente...');
